@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="Expanded">
+		<ListPreference
+			android:key="exp_style_pref"
+			android:entries="@array/exp_style_entries"
+			android:entryValues="@array/exp_style_values" 
+			android:title="Expanded style mode" 
+			android:summary="Choose statusbar expanded style"
+		/>
+		<ListPreference
+			android:key="exp_color_style_pref"
+			android:entries="@array/exp_color_style_entries"
+			android:entryValues="@array/exp_color_style_values" 
+			android:title="Expanded color mode" 
+			android:summary="Choose statusbar expanded color style"
+		/>
+		<net.margaritov.preference.colorpicker.ColorPickerPreference 
+			android:key="exp_custom_color_pref"
+			android:title="Expanded custom color" 
+			android:summary="Choose any color you like"
+			android:persistent="true"
+		/>		
+	</PreferenceCategory>
+	<!--<PreferenceCategory android:title="Pie">
+		<CheckBoxPreference
+			android:key="pie_enable_pref"
+			android:title="Enable pie control"
+			android:summary=""/>
+		<ListPreference
+			android:dependency="pie_enable_pref"
+			android:key="pie_gap_pref"
+			android:entries="@array/pie_gap_entries"
+			android:entryValues="@array/pie_gap_values" 
+			android:title="Pie gap" 
+			android:summary="Choose pie item gap"
+		/>
+		<ListPreference
+			android:dependency="pie_enable_pref"
+			android:key="pie_trigger_pref"
+			android:entries="@array/pie_trigger_sensitivity_entries"
+			android:entryValues="@array/pie_trigger_sensitivity_values" 
+			android:title="Pie trigger sensitivity" 
+			android:summary="Choose the sensitivity"
+		/>
+		<net.margaritov.preference.colorpicker.ColorPickerPreference 
+			android:key="pie_theme_color"
+			android:title="Pie theme color" 
+			android:summary="Choose any color"
+		/>
+		<CheckBoxPreference
+			android:dependency="pie_enable_pref"
+			android:key="pie_colorize_pref"
+			android:title="Enable colorize pie" 
+			android:summary="Enable custom color pie"
+		/>
+		
+		<net.margaritov.preference.colorpicker.ColorPickerPreference 
+			android:dependency="pie_colorize_pref"
+			android:key="pie_color_background_pref"
+			android:title="Pie background color" 
+			android:summary="Choose any color"
+			android:persistent="true"
+		/>
+		<net.margaritov.preference.colorpicker.ColorPickerPreference 
+			android:dependency="pie_colorize_pref"
+			android:key="pie_color_outline_pref"
+			android:title="Pie outline color" 
+			android:summary="Choose any color"
+			android:persistent="true"
+		/>
+		<net.margaritov.preference.colorpicker.ColorPickerPreference 
+			android:dependency="pie_colorize_pref"
+			android:key="pie_color_select_pref"
+			android:title="Pie select color" 
+			android:summary="Choose any color"
+			android:persistent="true"
+		/>
+		<net.margaritov.preference.colorpicker.ColorPickerPreference 
+			android:dependency="pie_colorize_pref"
+			android:key="pie_color_chevron_pref"
+			android:title="Pie chevron color" 
+			android:summary="Choose any color"
+			android:persistent="true"
+		/>
+		<net.margaritov.preference.colorpicker.ColorPickerPreference 
+			android:dependency="pie_colorize_pref"
+			android:key="pie_color_battery_pref"
+			android:title="Pie battery color" 
+			android:summary="Choose any color"
+		/>
+		<net.margaritov.preference.colorpicker.ColorPickerPreference 
+			android:dependency="pie_colorize_pref"
+			android:key="pie_color_clock_pref"
+			android:title="Pie clock color" 
+			android:summary="Choose any color"
+		/>
+	</PreferenceCategory>
+-->
+
+
+	<PreferenceCategory
+        android:title="Status bar">
+		<ListPreference
+			android:key="battery_mode_pref"
+			android:title="Battery mode" 
+			android:summary="Choose the mode"
+		/>
+        <ListPreference
+			android:key="traffic_mode_pref"
+			android:title="Internet speed meter mode"
+			android:summary="Choose the mode"
+			android:entries="@array/traffic_mode_entries"
+			android:entryValues="@array/traffic_mode_values"
+		/>
+		<ListPreference
+			android:key="weekday_mode_pref"
+			android:entries="@array/weekday_mode_entries"
+			android:entryValues="@array/weekday_mode_values" 
+			android:title="Weekday mode" 
+			android:summary="Choose the mode"
+		/>
+		<ListPreference
+			android:key="ampm_mode_pref"
+			android:entries="@array/ampm_mode_entries"
+			android:entryValues="@array/ampm_mode_values" 
+			android:title="AMPM mode" 
+			android:summary="Choose the mode, this mode is referencing to Settings->Date and Time->Use 24-hour format"
+		/>
+    </PreferenceCategory>
+	<PreferenceCategory
+        android:title="Tint status bar">
+
+		<CheckBoxPreference
+			android:key="tint_enable_pref"
+			android:title="Enable tint status bar" 
+			android:summary="Set status bar color depends on the top color of the screen. WARNING:This feature is experimental, it may cause your device unstable and make your battery drain faster!"
+		/>
+		<ListPreference
+			android:dependency="tint_enable_pref"
+			android:key="status_bar_bg_pref"
+			android:entries="@array/status_bar_bg_entries"
+			android:entryValues="@array/status_bar_bg_values" 
+			android:title="Tint status bar background" 
+			android:summary="Choose status bar background style"
+		/>
+		<ListPreference
+			android:dependency="tint_enable_pref"
+			android:key="tint_update_rate_pref"
+			android:title="Tint status bar update interval"
+			android:summary="Choose the interval time to update the tint status bar"
+		/>
+	</PreferenceCategory>
+	<PreferenceCategory
+        android:title="Other Features">
+
+		<ListPreference
+			android:key="qp_music_mode_pref"
+			android:entries="@array/qp_music_mode_entries"
+			android:entryValues="@array/qp_music_mode_values" 
+			android:title="Pop up music quickpanel mode" 
+			android:summary="Choose quickpanel mode"
+		/>
+		<CheckBoxPreference
+			android:key="night_mode_enable_pref"
+			android:title="Enable night mode" 
+			android:summary="If enable, the brightness screen will be decreased below the normal system brightness"
+		/>
+		<CheckBoxPreference
+			android:key="double_tap_sleep_pref"
+			android:title="Double tap statusbar to sleep" 
+			android:summary="Double tap the left/center part area of the statusbar to go to sleep mode"
+		/>
+		<CheckBoxPreference
+			android:key="headsup_notif_enable_pref"
+			android:title="Enable heads-up notification" 
+			android:summary="Show new notifications on pop-up window"
+		/>
+		<CheckBoxPreference
+			android:key="peek_notif_enable_pref"
+			android:title="Enable peek new notification" 
+			android:summary="Show status bar (when in full screen mode) when there is a new notification"
+		/>
+		<PreferenceScreen
+			android:title="Owner profile" 
+			android:summary="Change the owner pic on statusbar">
+			<intent 
+				android:action="android.intent.action.MAIN"
+				android:targetPackage="kere.settings"
+				android:targetClass=  "kere.settings.a.Profile" />
+		</PreferenceScreen>
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+        android:title="Quicksettings">
+		<PreferenceScreen
+			android:title="Quicksetting buttons" 
+			android:summary="Quicksettings customize settings">
+			<intent 
+				android:action="android.intent.action.MAIN"
+				android:targetPackage="kere.settings"
+				android:targetClass=  "kere.settings.a.QSButtonsActivity" />
+		</PreferenceScreen>
+		<PreferenceScreen 
+			android:title="Quicksettings buttons order" 
+			android:summary="Quicksettings customize order settings">
+			<intent 
+				android:action="android.intent.action.MAIN"
+				android:targetPackage="kere.settings"
+				android:targetClass=  "kere.settings.a.QSButtonsOrderActivity" />
+		</PreferenceScreen>
+	</PreferenceCategory>
+	<PreferenceCategory
+        android:title="Side button panel">
+
+		<CheckBoxPreference
+			android:key="side_panel_pref"
+			android:title="Enable side button panel" 
+			
+		/>
+		<ListPreference
+			android:dependency="side_panel_pref"
+			android:key="side_panel_alpha_pref"
+			android:title="Side panel transparency" 
+			android:summary="Choose panel transparency"
+		/>
+		<ListPreference
+			android:dependency="side_panel_pref"
+			android:key="side_panel_timeout_pref"
+			android:title="Side panel timeout" 
+			android:summary="Side panel will be gone in chosen interval time after no activity"
+		/>
+		<PreferenceScreen
+			android:dependency="side_panel_pref"
+			android:key="side panel button "
+			android:title="Side panel buttons" 
+			android:summary="Choose which button to be shown on the side panel">
+			<intent 
+				android:action="android.intent.action.MAIN"
+				android:targetPackage="kere.settings"
+				android:targetClass=  "kere.settings.a.SidePanelButtonsActivity" />
+		</PreferenceScreen>
+		<PreferenceScreen
+			android:dependency="side_panel_pref"
+			android:key="side panel button order "
+			android:title="Side panel buttons order" 
+			android:summary="Customize the order of the buttons">
+			<intent 
+				android:action="android.intent.action.MAIN"
+				android:targetPackage="kere.settings"
+				android:targetClass=  "kere.settings.a.SidePanelButtonsOrderActivity" />
+		</PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

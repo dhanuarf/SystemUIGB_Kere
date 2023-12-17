@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ -->
+
+<resources>
+
+
+<!--#####-->
+   <string-array name="exp_style_entries" formatted="false" translatable="false">
+        <item>default</item>
+        <item>albumart context</item>
+        <item>tint mode</item>
+        <item>custom color</item>
+    </string-array>
+
+   <string-array name="exp_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+	<string-array name="exp_header_style_entries" formatted="false" translatable="false">
+        <item>normal</item>
+        <item>dark</item>
+    </string-array>
+
+	<string-array name="exp_header_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+	
+	<string-array name="exp_color_style_entries" formatted="false" translatable="false">
+        <item>mode1</item>
+        <item>mode2</item>
+		<item>mode3</item>
+        <item>mode4</item>
+    </string-array>
+
+	<string-array name="exp_color_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+		<item>2</item>
+        <item>3</item>
+    </string-array>
+	
+    <string-array name="traffic_mode_entries" formatted="false" translatable="false">
+        <item>gone</item>
+        <item>in only</item>
+        <item>in out</item>
+    </string-array>
+
+	<string-array name="traffic_mode_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+	<string-array name="weekday_mode_entries" formatted="false" translatable="false">
+        <item>normal</item>
+        <item>small</item>
+        <item>gone</item>
+    </string-array>
+
+	<string-array name="weekday_mode_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+	<string-array name="ampm_mode_entries" formatted="false" translatable="false">
+        <item>gone</item>
+        <item>small</item>
+        <item>normal</item>
+    </string-array>
+
+	<string-array name="ampm_mode_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+	<string-array name="tint_update_rate_entries" formatted="false" translatable="false">
+        <item>Very slow</item>
+        <item>Slow</item>
+        <item>Normal</item>
+		<item>Fast</item>
+        <item>Very fast</item>
+        <item>Very very fast</item>
+    </string-array>
+
+	<string-array name="tint_update_rate_values" translatable="false">
+        <item>1200</item>
+        <item>700</item>
+        <item>600</item>
+		<item>400</item>
+		<item>200</item>
+		<item>100</item>
+    </string-array>
+	
+	<string-array name="status_bar_bg_entries" formatted="false" translatable="false">
+        <item>fulltrans</item>
+        <item>gradient</item>
+        <item>semitrans</item>
+    </string-array>
+
+	<string-array name="status_bar_bg_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+	
+	<string-array name="pie_gravity_entries" formatted="false" translatable="false">
+        <item>bottom</item>
+        <item>left</item>
+        <item>top</item>
+    </string-array>
+
+	<string-array name="pie_gravity_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+	
+	<string-array name="pie_trigger_sensitivity_entries" formatted="false" translatable="false">
+        <item>very less</item>
+        <item>less</item>
+        <item>normal</item>
+		<item>sensitive</item>
+        <item>very sensitive</item>
+    </string-array>
+
+	<string-array name="pie_trigger_sensitivity_values" translatable="false">
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+		<item>8</item>
+        <item>10</item>
+    </string-array>
+	<string-array name="pie_gap_entries" formatted="false" translatable="false">
+        <item>No gap</item>
+        <item>Very small</item>
+        <item>Small</item>
+		<item>Normal</item>
+        <item>Big</item>
+		<item>Very big</item>
+		<item>Huge</item>
+    </string-array>
+
+	<string-array name="pie_gap_values" translatable="false">
+		<item>0f</item>
+        <item>0.5f</item>
+        <item>1.3f</item>
+        <item>1.7f</item>
+		<item>2.3f</item>
+		<item>3.0f</item>
+		<item>3.8f</item>
+    </string-array>
+	
+	<string-array name="qp_music_mode_entries" formatted="false" translatable="false">
+        <item>disable</item>
+        <item>small layout</item>
+        <item>big layout</item>
+    </string-array>
+
+	<string-array name="qp_music_mode_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+		
+    </string-array>
+<!--######-->
+	
+	<!-- toggles -->
+	<string-array name="entries_brightness_widget" formatted="false" translatable="false">
+        <item>brightness_mode_auto</item>
+        <item>brightness_mode_dim</item>
+        <item>25%</item>
+        <item>50%</item>
+        <item>75%</item>
+        <item>100%</item>
+    </string-array>
+
+	<string-array name="values_brightness_widget" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="entries_network_widget">
+        <item>2G/3G+2G</item>  
+        <item>2G/3G Only</item>   
+        <item>2G/3G Only/3G+2G</item>
+    </string-array>
+
+    <string-array name="values_network_widget" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="entries_screentimeout_widget">
+        <item>15s/1m/5m</item>
+        <item>30s/2m/5m</item>
+    </string-array>
+
+    <string-array name="values_screentimeout_widget" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="entries_ring_widget" translatable="false">
+        <item>sound_mode_silent</item>
+        <item>sound_mode_vibrate</item>
+        <item>sound_mode_sound</item>
+        <item>sound_mode_soundVibrate</item>
+    </string-array>
+
+    <string-array name="values_ring_widget" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="entries_flash_widget">
+        <item>Normal</item>
+        <item>High / Death Ray</item>
+    </string-array>
+
+    <string-array name="values_flash_widget" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="entries_mobiledatanetwork_widget">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+
+    <string-array name="values_mobiledatanetwork_widget" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+	
+
+</resources>

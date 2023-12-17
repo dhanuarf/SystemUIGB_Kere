@@ -1,0 +1,30 @@
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<ImageView
+		android:layout_gravity="center"
+		android:layout_height="wrap_content"
+		android:id="@+id/sinyal"
+		android:layout_width="wrap_content"
+	/>
+	<ImageView
+		android:layout_gravity="left"
+		android:layout_marginTop="3dp"
+		android:layout_height="wrap_content"
+		android:id="@+id/tipe"
+		android:layout_width="wrap_content"
+		/>
+
+	<ImageView
+		android:layout_marginRight="9dp"
+		android:layout_gravity="bottom|right"
+		android:layout_height="wrap_content"
+		android:id="@+id/inout"
+		android:layout_width="wrap_content"
+	/>
+
+</FrameLayout>
+

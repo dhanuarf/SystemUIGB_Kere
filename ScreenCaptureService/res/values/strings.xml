@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="screen_capture_success">Screen captured. Saved as image file</string>
+    <string name="screen_capture_fail">Unable to capture screen. Try again</string>
+</resources> 

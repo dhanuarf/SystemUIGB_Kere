@@ -1,0 +1,32 @@
+<com.android.systemui.statusbar.LatestItemContainer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dip"
+    android:orientation="vertical"
+	android:paddingBottom="0dp"
+	android:paddingTop="0dp"
+    >
+	<View
+		android:layout_marginRight="15dp"
+		android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#C6C6C6"
+	/>
+    <com.android.systemui.statusbar.LatestItemView android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+			android:background="@*android:drawable/status_bar_item_background"
+            android:focusable="true"
+            android:clickable="true"
+            android:paddingRight="6sp"
+            >
+    </com.android.systemui.statusbar.LatestItemView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.2px"
+        android:background="#ff666666"
+        />
+
+</com.android.systemui.statusbar.LatestItemContainer>
+

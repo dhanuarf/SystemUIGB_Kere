@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.IntruderView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:paddingRight="0dp"
+	android:paddingLeft="0dp"
+	android:focusable="true"
+	android:descendantFocusability="afterDescendants">
+
+	<LinearLayout
+		android:paddingRight="10dp"
+		android:paddingLeft="10dp"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:orientation="vertical"
+		android:id="@+id/intruder_parent">
+
+		<ScrollView
+			android:id="@+id/intruderscroll"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:fadingEdge="none"
+			android:overScrollMode="ifContentScrolls">
+
+			<com.android.systemui.statusbar.NotificationLinearLayout
+				android:id="@+id/intrudernotificationLinearLayout"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:id="@+id/intruderlatestItems"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"/>
+
+			</com.android.systemui.statusbar.NotificationLinearLayout>
+
+		</ScrollView>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:gravity="right">
+
+			<Button
+				android:textColor="#ffffffff"
+				android:background="@null"
+				android:id="@+id/intruder_clear_all_button"
+				android:layout_width="wrap_content"
+				android:layout_height="0dp"
+				android:scaleType="center"
+				android:gravity="center"
+				android:text="CLEAR ALL"/>
+
+			<Button
+				android:textColor="#ffffffff"
+				android:background="@null"
+				android:id="@+id/intruder_alert_dismiss"
+				android:layout_width="wrap_content"
+				android:layout_height="40dp"
+				android:scaleType="center"
+				android:gravity="center"
+				android:text="DISMISS"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textSize="22sp"
+			android:textColor="#ffffff"
+			android:id="@+id/intruder_alert_tickertext"/>
+
+		<View
+			android:layout_height="6dp"
+			android:layout_width="fill_parent"/>
+		
+	</LinearLayout>
+
+</com.android.systemui.statusbar.IntruderView>
+

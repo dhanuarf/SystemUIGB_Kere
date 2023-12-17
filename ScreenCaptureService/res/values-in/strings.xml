@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="screen_capture_success">Layar dicapture. Simpan sebagai file gambar</string>
+    <string name="screen_capture_fail">Tidak dapat mengcapture layar. Coba lagi</string>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--toggles-->
+    <string name="title_toggle_wifi">Wi-Fi</string>
+    <string name="title_toggle_bluetooth">Bluetooth</string>
+    <string name="title_toggle_gps">GPS</string>
+    <string name="title_toggle_sound">Dering</string>
+    <string name="title_toggle_brightness">Kecerahan</string>
+    <string name="title_toggle_sync">Sinkronisasi</string>
+    <string name="title_toggle_wifiap">Wifi hotspot</string>
+    <string name="title_toggle_screentimeout">Waktu layar</string>
+    <string name="title_toggle_mobiledata">Data seluler</string>
+    <string name="title_toggle_lockscreen">Layar kunci</string>
+    <string name="title_toggle_networkmode">2G/3G</string>
+    <string name="title_toggle_autorotate">Rotasi otomatis</string>
+    <string name="title_toggle_airplane">Penerbangan</string>
+    <string name="title_toggle_flashlight">Senter</string>
+    <string name="title_toggle_sleep">Tidur</string>
+    <string name="title_toggle_night_mode">Mode malam</string>
+    <string name="title_toggle_dsb">Tint statusbar</string>	
+</resources>

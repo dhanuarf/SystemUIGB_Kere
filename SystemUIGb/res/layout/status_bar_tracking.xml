@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.TrackingView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:visibility="gone"
+	android:focusable="true"
+	android:descendantFocusability="afterDescendants"
+	android:paddingBottom="0px"
+	android:paddingLeft="0px"
+	android:paddingRight="0px"
+	android:background="#00000000">
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:background="@null"/>
+
+	<com.android.systemui.statusbar.CloseDragHandle
+		android:id="@+id/close"
+		android:gravity="top"
+		android:layout_width="match_parent"
+		android:layout_height="20dp"
+		android:background="#ff000000"
+		android:orientation="vertical">
+			
+			<ImageView
+				android:layout_width="fill_parent"
+				android:layout_height="5dp"
+				android:id="@+id/closDrag"
+				/>
+	</com.android.systemui.statusbar.CloseDragHandle>
+
+</com.android.systemui.statusbar.TrackingView>
+

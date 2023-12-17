@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">KereSettings</string>
+	<!--toggles-->
+	<string name="title_buttons">Buttons</string>
+    <string name="title_toggle_wifi">Toggle Wifi</string>
+    <string name="title_toggle_bluetooth">Toggle Bluetooth</string>
+    <string name="title_toggle_gps">Toggle GPS</string>
+    <string name="title_toggle_sound">Toggle Sound</string>
+    <string name="title_toggle_brightness">Toggle Brightness</string>
+    <string name="title_toggle_sync">Toggle Sync</string>
+    <string name="title_toggle_wifiap">Toggle Wifi AP</string>
+    <string name="title_toggle_screentimeout">Toggle Screentimeout</string>
+    <string name="title_toggle_mobiledata">Toggle Mobiledata</string>
+    <string name="title_toggle_lockscreen">Toggle Lockscreen</string>
+    <string name="title_toggle_networkmode">Toggle 2G/3G</string>
+    <string name="title_toggle_autorotate">Toggle Orientation</string>
+    <string name="title_toggle_airplane">Toggle Airplane mode</string>
+    <string name="title_toggle_flashlight">Toggle LED flashlight</string>
+    <string name="title_toggle_sleep">Go to sleep</string>
+    <string name="title_toggle_night_mode">Toggle Night mode</string>
+    <string name="title_toggle_dsb">Toggle Tint Statusbar</string>
+    <string name="title_toggle_media_next">Media: Skip to Next</string>
+    <string name="title_toggle_wimax">Toggle WiMAX</string>
+    <string name="title_button_modes">Button modes</string>
+	
+	<string name="btnpnl_back">Back button</string>
+	<string name="btnpnl_home">Home button</string>
+	<string name="btnpnl_recent">Recent apps dialog button</string>
+	<string name="btnpnl_ss">Screenshot button</string>
+	<string name="btnpnl_volup">Volume up button</string>
+	<string name="btnpnl_voldown">Volume down button</string>
+	<string name="btnpnl_menu">Menu button</string>
+	<string name="btnpnl_powermenu">Power menu dialog button</string>
+	
+	<string name="sidepanel_enabled_summary">Side button panel enabled, double tap statusbar(at clock area / rightside) to show the panel</string>
+</resources>

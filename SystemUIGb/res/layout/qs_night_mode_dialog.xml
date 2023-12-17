@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:padding="5dp"
+	android:orientation="vertical">
+
+	<TextView
+		android:gravity="center_vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="40dp"
+		android:textSize="25sp"
+		android:textColor="#aa000000"
+		android:paddingLeft="14dp"
+		android:text="Night mode"/>
+
+	<View
+		android:gravity="center_vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="1px"
+		android:layout_marginLeft="14dp"
+		android:layout_marginRight="14dp"
+		android:background="#88000000"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:padding="15dp"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/intensity_container"
+			android:orientation="vertical"
+			android:paddingRight="10dp"
+			android:paddingLeft="10dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#ff444444"
+				android:text="Intensity"/>
+
+			<SeekBar
+				android:paddingRight="25dp"
+				android:paddingLeft="30dp"
+				style="@style/SeekBar"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/seekbar_intensity"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/scr_dim_container"
+			android:orientation="vertical"
+			android:paddingRight="10dp"
+			android:paddingLeft="10dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#ff333333"
+				android:text="Screen dim"/>
+
+			<SeekBar
+				style="@style/SeekBar"
+				android:paddingRight="25dp"
+				android:paddingLeft="30dp"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/seekbar_scr_dim"/>
+
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:orientation="horizontal"
+		android:paddingRight="10dp"
+		android:gravity="right|center_vertical"
+		>
+		<TextView
+			android:textSize="18sp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#ff333333"
+			android:id="@+id/disableBtn"
+			android:text="Disable"/>
+	</LinearLayout>
+
+	</LinearLayout>
+

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="screen_capture_success">จับ​ภาพ​หน้า​จอ​แล้ว บันทึก​เป็น​ไฟล์​รูป​ภาพ</string>
+    <string name="screen_capture_fail">ไม่​สามารถ​จับ​ภาพ​หน้า​จอ ลอง​อีก​ครั้ง</string>
+</resources>

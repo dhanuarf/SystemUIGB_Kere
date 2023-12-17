@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="screen_capture_success">Skrin ditangkap. Simpan sebagai fail imej</string>
+    <string name="screen_capture_fail">Tdk dpt menangkap skrin. Cuba lagi</string>
+</resources>

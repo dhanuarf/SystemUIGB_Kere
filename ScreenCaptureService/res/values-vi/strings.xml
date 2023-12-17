@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="screen_capture_success">Màn hình đã được chụp. Đã lưu như file ảnh</string>
+    <string name="screen_capture_fail">Không thể chụp màn hình. Xin thử lại</string>
+</resources>

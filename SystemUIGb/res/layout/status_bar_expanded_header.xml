@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:id="@+id/exp_header"
+	android:background="#2F4449"
+
+>
+	<!-- LEFT SIDE -->
+	<com.android.systemui.statusbar.ClockHeader
+		android:textColor="#ffffff"
+		android:textSize="17sp"
+		android:textStyle="bold"
+		android:id ="@+id/clockHeader"
+		android:layout_width="wrap_content"
+		android:paddingLeft="8dip"
+		android:layout_height="wrap_content"/>
+	<com.android.systemui.statusbar.DateView
+		android:id="@+id/hdr_tgl"
+		android:paddingLeft="8dip"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:singleLine="true"
+		android:layout_below="@+id/clockHeader"
+		android:paddingBottom="0dip"
+		android:textSize="14.5sp"/>
+
+	<com.android.systemui.powerwidget.QuickPowerWidget
+		android:layout_below="@+id/clockHeader"
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/qpw_tile_height"
+		android:id="@+id/qpw_view"/>
+
+
+	<!-- RIGHT SIDE-->
+	<com.android.systemui.statusbar.CarrierLabel
+		android:layout_width="wrap_content"
+		android:layout_marginTop="4dp"
+		android:id="@+id/carrier_label"
+		android:layout_marginRight="6dp"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:textSize="13sp"/>
+	
+	<com.b16h22.statusbar.ProfilePicture
+		android:layout_width="25dp"
+		android:layout_height="25dp"
+		android:scaleType="centerCrop" 
+		android:id="@+id/profile_pic"
+		android:layout_toLeftOf="@+id/sleting"
+		android:layout_centerVertical="true"
+		android:layout_marginRight="18dp"
+	/>
+	<ImageView
+		android:id="@+id/sleting"
+		android:layout_width="25dp"
+		android:layout_height="25dp"
+		android:layout_marginRight="18dp"
+		android:layout_toLeftOf="@+id/qs_more_button"
+		android:layout_centerVertical="true"
+		android:src="@drawable/ic_qs_settings"/>
+
+	<ImageView
+		android:id="@+id/qs_more_button"
+		android:layout_width="25dp"
+		android:layout_height="25dp"
+		android:layout_marginRight="14dp"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:src="@drawable/ic_more"/>
+	<!--
+	<com.android.systemui.statusbar.SignalClusterExp
+	android:id="@+id/exp_klaster_view"
+	android:layout_toLeftOf="@+id/exp_batre"
+	android:layout_centerVertical="true"
+	android:gravity="center"
+	android:layout_marginRight="10dp"
+	android:layout_width="0dp"
+	android:layout_height="@dimen/status_bar_icon_size"
+	/>
+
+	<com.android.systemui.statusbar.CircleBattery
+	android:id="@+id/exp_batre"
+	android:layout_toLeftOf="@+id/sleting"
+	android:layout_width="0dp"
+	android:layout_height="0dp"
+	android:layout_marginRight="10dp"
+	android:layout_centerVertical="true"/>
+	-->
+</RelativeLayout>
+

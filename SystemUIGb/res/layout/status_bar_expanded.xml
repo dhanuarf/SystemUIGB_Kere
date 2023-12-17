@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.ExpandedView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:focusable="true"
+	android:paddingRight="0dip"
+	android:paddingLeft="0dip"
+	android:descendantFocusability="afterDescendants">
+
+	<com.android.systemui.statusbar.ExpandedPanelView
+		android:id="@+id/expPanelView"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<RelativeLayout
+			android:id="@+id/heder_leyot"
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/status_bar_header_normal_height"
+			android:baselineAligned="false">
+
+			<!-- include header layout -->
+			<include
+				android:layout_width="match_parent"
+				android:layout_height="fill_parent"
+				layout="@layout/status_bar_expanded_header"/>
+
+		</RelativeLayout>
+
+		<com.android.systemui.statusbar.PanelContainerView
+			android:id="@+id/toggleContainer"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<com.android.systemui.observablescrollview.ObservableScrollView
+				android:overScrollMode="never"
+				android:scrollbars="none"
+				android:layout_weight="0"
+				android:id="@+id/scroll"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:orientation="vertical">
+					<LinearLayout
+						android:layout_marginTop="@dimen/minus_pw_height"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<LinearLayout
+							android:id="@+id/togel_view_parent"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:background="#FF253336"
+							android:orientation="vertical">
+
+							<LinearLayout
+								android:background="#00000000"
+								android:id="@+id/ganjelView"
+								android:orientation="horizontal"
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content"
+								android:baselineAligned="false">
+								<!--
+								<include
+								layout="@layout/status_bar_expanded_brightness_slider"/>
+								-->
+							</LinearLayout>
+
+							<LinearLayout
+								android:background="#00000000"
+								android:id="@+id/qs_container"
+								android:orientation="vertical"
+								android:layout_width="fill_parent"
+								android:layout_height="@dimen/pw_height">
+
+								<include
+									layout="@layout/qs_view"/>
+							</LinearLayout>
+							<LinearLayout
+								android:layout_marginTop="@dimen/minus_bslider_height"
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content"
+								android:orientation="vertical">
+								<LinearLayout
+									android:background="#00000000"
+									android:id="@+id/ganjelViewBSlider"
+									android:orientation="horizontal"
+									android:layout_width="fill_parent"
+									android:layout_height="wrap_content"
+									android:baselineAligned="false">
+								</LinearLayout>
+								<LinearLayout
+									android:background="#00000000"
+									android:id="@+id/bslider_container"
+									android:orientation="vertical"
+									android:layout_width="fill_parent"
+									android:layout_height="@dimen/bslider_height">
+									<include
+										layout="@layout/status_bar_expanded_brightness_slider"/>
+								</LinearLayout>
+							</LinearLayout>
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/isi_notif"
+							android:paddingTop="8dp"
+							android:orientation="vertical"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content">
+
+							<com.android.systemui.statusbar.NotificationLinearLayout
+								android:id="@+id/notificationLinearLayout"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:orientation="vertical">
+
+								<TextView
+									android:id="@+id/noNotificationsTitle"
+									android:layout_width="match_parent"
+									android:layout_height="0dp"
+									android:background="@drawable/shade_bgcolor"
+									android:paddingLeft="8dp"
+									android:textAppearance="@style/TextAppearance.StatusBar.Title"
+									android:text="@string/status_bar_no_notifications_title"/>
+
+								<TextView
+									android:id="@+id/ongoingTitle"
+									android:layout_width="match_parent"
+									android:layout_height="0dp"
+									android:gravity="right"
+									android:paddingRight="8dp"
+									android:textAppearance="@style/TextAppearance.StatusBar.Title"
+									android:text="@string/status_bar_ongoing_events_title"/>
+
+								<LinearLayout
+									android:id="@+id/ongoingItems"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:orientation="vertical"/>
+
+								<TextView
+									android:id="@+id/latestTitle"
+									android:layout_width="match_parent"
+									android:layout_height="0dp"
+									android:paddingRight="8dp"
+									android:gravity="right"
+									android:textAppearance="@style/TextAppearance.StatusBar.Title"
+									android:text="@string/status_bar_latest_events_title"/>
+
+								<LinearLayout
+									android:id="@+id/latestItems"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:orientation="vertical"/>
+
+								<LinearLayout
+									android:gravity="right"
+									android:layout_width="fill_parent"
+									android:layout_height="wrap_content">
+
+									<ImageView
+										android:id="@+id/clear_all_button"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:layout_marginRight="8dp"
+										android:layout_alignParentRight="true"
+										android:layout_centerVertical="true"
+										android:src="@drawable/ic_notify_clear"/>
+
+									<!-- trigger area -->
+									<ImageView
+										android:layout_width="wrap_content"
+										android:layout_height="25dp"
+
+									/>
+
+								</LinearLayout>
+
+							</com.android.systemui.statusbar.NotificationLinearLayout>
+
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+
+			</com.android.systemui.observablescrollview.ObservableScrollView>
+
+		</com.android.systemui.statusbar.PanelContainerView>
+
+	</com.android.systemui.statusbar.ExpandedPanelView>
+
+</com.android.systemui.statusbar.ExpandedView>
+

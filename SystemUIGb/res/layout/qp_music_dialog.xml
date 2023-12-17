@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.QPMusicView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:padding="0dp"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:id="@+id/qp_parent"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="5dp"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:id="@+id/qp_bigLayout"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="horizontal"
+			android:padding="0dp">
+
+			<kere.widget.RoundImageView
+				android:layout_height="80dp"
+				android:layout_width="80dp"
+				android:src="@android:drawable/ic_menu_close_clear_cancel"
+				android:id="@+id/albumart"/>
+
+			<LinearLayout
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:orientation="vertical"
+				android:paddingLeft="22dp">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textStyle="bold"
+					android:layout_width="wrap_content"
+					android:id="@+id/artis"
+					android:textSize="18sp"
+					android:singleLine="true"
+					android:textColor="#ff111111"
+					android:ellipsize="marquee"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:id="@+id/judul"
+					android:textColor="#ff333333"
+					android:textSize="15sp"
+					android:singleLine="true"
+					android:ellipsize="marquee"/>
+
+				<RelativeLayout
+					android:paddingLeft="28dp"
+					android:paddingRight="28dp"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:gravity="center_horizontal"
+					android:orientation="horizontal">
+
+					<ImageView
+						android:tint="#ff666666"
+						android:layout_alignParentLeft="true"
+						android:layout_height="40dp"
+						android:layout_width="40dp"
+						android:id="@+id/mundur"/>
+
+					<ImageView
+						android:tint="#ff666666"
+						android:layout_height="40dp"
+						android:layout_width="40dp"
+						android:id="@+id/plepaus"
+						android:layout_centerHorizontal="true"/>
+
+					<ImageView
+						android:tint="#ff666666"
+						android:layout_height="40dp"
+						android:layout_width="40dp"
+						android:id="@+id/maju"
+						android:layout_alignParentRight="true"/>
+
+				</RelativeLayout>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/qp_smallLayout"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:paddingLeft="4dp"
+			android:orientation="horizontal">
+
+			<kere.widget.RoundImageView
+				android:layout_height="42dp"
+				android:layout_width="42dp"
+				android:src="@android:drawable/ic_menu_close_clear_cancel"
+				android:id="@+id/albumart_small"/>
+
+			<LinearLayout
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:orientation="vertical"
+				android:paddingLeft="14dp">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textStyle="bold"
+					android:layout_width="wrap_content"
+					android:id="@+id/artis_small"
+					android:textSize="16sp"
+					android:singleLine="true"
+					android:textColor="#ff111111"
+					android:ellipsize="marquee"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:id="@+id/judul_small"
+					android:textColor="#ff333333"
+					android:textSize="14.5sp"
+					android:singleLine="true"
+					android:ellipsize="marquee"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</com.android.systemui.statusbar.QPMusicView>
+

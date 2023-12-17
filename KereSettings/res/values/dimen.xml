@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<dimen name="dragitem_normal_height">64dp</dimen>
+	<dimen name="dragitem_expanded_height">128dp</dimen>
+</resources>
